@@ -13,7 +13,7 @@ import React from "react";
 import Baselayout from "../../components/layouts/Baselayout";
 import VideosModal from "../../components/videos/VideosModal";
 
-const index = () => {
+const Index = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();
   return (
     <Baselayout>
@@ -120,4 +120,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
