@@ -6,11 +6,7 @@ const index = () => {
       <div className="flex-1 lg:w-6/12 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
         <div className="mx-auto w-full max-w-sm lg:w-10/12">
           <div>
-            {/* <img
-              className="h-12 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              alt="Workflow"
-            /> */}
+            <img className="h-12 w-auto" src="/logo.png" alt="Logo" />
             <h2 className="mt-6 text-3xl font-extrabold text-gray-900">
               Sign in to your account
             </h2>
