@@ -24,11 +24,11 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
         aria-modal="true"
       >
         <div
-          className="fixed inset-0 bg-gray-600 bg-opacity-75"
+          className="fixed inset-0 bg-white border-b bg-opacity-75"
           aria-hidden="true"
         ></div>
 
-        <div className="relative flex-1 flex flex-col max-w-xs w-full bg-gray-800">
+        <div className="relative flex-1 flex flex-col max-w-xs w-full bg-white border-b">
           <div className="absolute top-0 right-0 -mr-12 pt-2">
             <button
               type="button"
@@ -224,9 +224,9 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
             : "hidden"
         }`}
       >
-        <div className="flex-1 flex flex-col min-h-0 bg-gray-800">
+        <div className="flex-1 flex flex-col min-h-0 bg-white border-r ">
           <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-            <div className="flex items-center flex-shrink-0 px-4">
+            <div className="flex items-center flex-shrink-0 px-4 border-b pb-5">
               <img className="h-8 w-auto" src="/logo.png" alt="Logo" />
             </div>
             <nav className="mt-5 flex-1 px-2 space-y-1">
@@ -234,15 +234,15 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
                 href="/dashboard"
                 className={`${
                   currentRouteFinder("/dashboard")
-                    ? "bg-gray-900 text-white"
-                    : "hover:bg-gray-700 hover:text-white text-gray-300"
+                    ? "text-[#8276fd]"
+                    : "hover:text-[#8276fd]  text-[#60667f]"
                 }   group flex items-center px-2 py-2 text-sm font-medium rounded-md`}
               >
                 <svg
                   className={`${
                     currentRouteFinder("/dashboard")
-                      ? "text-gray-300"
-                      : "text-gray-400"
+                      ? "text-[#8276fd]"
+                      : "text-[#60667f]"
                   }  mr-3 flex-shrink-0 h-6 w-6`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -264,8 +264,8 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
                 href="/videos"
                 className={`${
                   currentRouteFinder("/videos")
-                    ? "bg-gray-900 text-white"
-                    : "hover:bg-gray-700 hover:text-white text-gray-300"
+                    ? "text-[#8276fd]"
+                    : "hover:text-[#8276fd]  text-[#60667f]"
                 }   group flex items-center px-2 py-2 text-sm font-medium rounded-md`}
               >
                 <svg
@@ -276,8 +276,8 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
                   stroke="currentColor"
                   className={`${
                     currentRouteFinder("/videos")
-                      ? "text-gray-300"
-                      : "text-gray-400"
+                      ? "text-[#8276fd]"
+                      : "text-[#60667f]"
                   }  mr-3 flex-shrink-0 h-6 w-6`}
                 >
                   <path
@@ -289,31 +289,14 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
               </Link>
             </nav>
           </div>
-          <div className="flex-shrink-0 flex bg-gray-700 p-4">
-            <a href="#" className="flex-shrink-0 w-full group block">
-              <div className="flex items-center">
-                <div>
-                  <img
-                    className="inline-block h-9 w-9 rounded-full"
-                    src="/logo.png"
-                    alt=""
-                  />
-                </div>
-                <div className="ml-3">
-                  <p className="text-sm font-medium text-white">
-                    Oliver otchere
-                  </p>
-                  <p className="text-xs font-medium text-gray-300 group-hover:text-gray-200">
-                    View profile
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
-      <div className={`${open ? "md:pl-64" : ""} flex flex-col flex-1`}>
-        <div className="sticky top-0 z-10  pl-1 pt-1 sm:pl-3 sm:pt-3 ">
+      <div
+        className={`${
+          open ? "md:pl-64" : ""
+        } flex flex-col flex-1 bg-[#f0f0f5]`}
+      >
+        <div className="sticky bg-white top-0 z-10  pl-1 pt-1 sm:pl-3 sm:pt-3 py-4">
           <button
             type="button"
             className="-ml-0.5 -mt-0.5 h-12 border rounded-full w-12 inline-flex items-center justify-center text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -336,7 +319,7 @@ const Baselayout: React.FC<IBaselayout> = ({ children }) => {
             </svg>
           </button>
         </div>
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 ">{children}</main>
       </div>
     </div>
   );
