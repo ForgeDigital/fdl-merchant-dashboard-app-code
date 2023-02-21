@@ -14,7 +14,7 @@ const DashboardCard: React.FC<IDashboardCard> = ({
   className,
 }) => {
   return (
-    <div className="w-[25%] border shadow-lg px-5 rounded-md py-5">
+    <div className="w-[25%] border shadow-lg px-5 rounded-md py-5 bg-white">
       <div className="flex items-center gap-6">
         <div>
           <div
