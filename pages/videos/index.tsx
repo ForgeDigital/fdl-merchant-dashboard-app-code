@@ -104,7 +104,7 @@ const Index = () => {
             </Button>
           </div>
         </div>
-        <VideosModal isOpen={isOpen} onClose={onClose} />
+        <VideosModal callback={fetchAssets} isOpen={isOpen} onClose={onClose} />
         <div className=" mx-auto px-4 sm:px-6 md:px-8">
           <div className="py-4">
             <div className="bg-gray-50 p-5 rounded-md shadow-sm mt-10">
